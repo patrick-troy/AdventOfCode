@@ -1,3 +1,8 @@
+from aocd import get_data
+
+session = "53616c7465645f5faf5b07f02c599e770eb3890fef2f9160aa1d181" \
+          "8008355b1039bff4b82dd31da6789c51ed44ffba3bd74d9af3975c26e245446ff30bcf2c7"
+
 X = 1
 Y = 2
 Z = 3
@@ -14,7 +19,7 @@ lose = 0
 
 points = 0
 
-data = [line.strip() for line in open(r"C:\Users\patrick.troy\Downloads\day_2.txt")]
+data = get_data(day=2, year=2022, session=session).split("\n")
 
 # PART 1
 for combination in data:
