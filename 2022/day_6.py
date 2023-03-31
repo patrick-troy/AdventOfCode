@@ -23,6 +23,4 @@ def marker_finder(datastream_buffer: str, packet_length: int):
 
 print(marker_finder(datastream_buffer[0], packet_length=4))
 print(marker_finder(datastream_buffer[0], packet_length=14))
-print("Test_Update_3")
-
-
+print("Test_Update_37")
