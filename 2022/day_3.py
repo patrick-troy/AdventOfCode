@@ -1,4 +1,9 @@
-rucksacks = [line.strip() for line in open(r"C:\Users\patrick.troy\Downloads\day_3.txt")]
+from aocd import get_data
+
+session = "53616c7465645f5faf5b07f02c599e770eb3890fef2f9160aa1d181" \
+          "8008355b1039bff4b82dd31da6789c51ed44ffba3bd74d9af3975c26e245446ff30bcf2c7"
+
+rucksacks = get_data(day=3, year=2022, session=session).split("\n")
 
 # PART 1
 total = 0

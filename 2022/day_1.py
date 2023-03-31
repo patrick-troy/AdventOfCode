@@ -1,6 +1,9 @@
-import pandas as pd
+from aocd import get_data
 
-data = pd.read_csv(r"C:\Users\patrick.troy\Downloads\day_1.csv", skip_blank_lines=False, header=None)
+session = "53616c7465645f5faf5b07f02c599e770eb3890fef2f9160aa1d181" \
+          "8008355b1039bff4b82dd31da6789c51ed44ffba3bd74d9af3975c26e245446ff30bcf2c7"
+
+data = get_data(day=4, year=2022, session=session).split("\n")
 
 # PART 1
 max_calories = 0
